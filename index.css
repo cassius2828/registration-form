@@ -1,0 +1,213 @@
+
+/* everything selectors */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #150f30;
+    color: azure;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    padding: 6%;
+  }
+  
+  a {
+    color: #dfdfe2;
+  }
+  
+  h1,
+  p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* both of these for most accurate results */
+    margin: auto;
+    width: 70rem;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    .header-container {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .header-container {
+      width: 30rem;
+    }
+  }
+  /* div container for entire form */
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70rem;
+    margin: auto;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    .container {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .container {
+      width: 30rem;
+    }
+  }
+  
+  /* flexbox container for each part of the form */
+  
+  .flexbox {
+    display: flex;
+    margin: auto;
+    width: 70rem;
+    margin: auto;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    .flexbox {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .flexbox {
+      width: 30rem;
+    }
+  }
+  
+  /* name email and password section */
+  
+  #section1 {
+    width: 70rem;
+    margin: auto;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: none;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    #section1 {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    #section1 {
+      width: 30rem;
+    }
+  }
+  
+  form {
+    width: 70rem;
+    margin: auto;
+    padding: 0;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    form {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    form {
+      width: 30rem;
+    }
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    width: 70rem;
+    margin: auto;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    fieldset {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    fieldset {
+      width: 30rem;
+    }
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 10px;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input,
+  textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  /* radio and check box */
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  /* submit button */
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 2.1rem; 
+    /* check font size */
+    background-color: #3b3b4f;
+    border-color: white;
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1439px) {
+    input[type="submit"] {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    input[type="submit"] {
+      width: 30%;
+    }
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+/* add this too */
+
+  textarea {
+    font-size: 1em;
+  }
